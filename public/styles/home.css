@@ -1,0 +1,288 @@
+/* HERO STYLES */
+.hero-video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+  
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+    width: 80%;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.hero-cta {
+    background-color: transparent;
+    border-width: 3px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 40px;
+    transition: all 0.25s ease;
+    width: 40%;
+}
+
+.hero-cta:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* MISSION STATEMENT STYLES */
+.ms-text {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+    color: #fff;
+}
+
+.ms-text h2 {
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 125px;
+}
+
+.ms-text p {
+    font-size: 26px;
+}
+
+.ms-image {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .ms-text {
+        flex: none;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    .ms-image {
+        flex: none;
+        max-width: none;
+        margin: 0 auto;
+    }
+  }
+
+
+/* PROMO VIDEO SECTION STYLES */
+.promo-video {
+    padding: 0;
+}
+
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    position: relative;  
+    display: flex;
+    padding-top: 75px;
+    padding-bottom: 125px;
+    border-bottom: 1px solid #363636;
+}
+
+.testimonials h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+}
+  
+.swiper {
+    width: 950px;
+}
+  
+.card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    height: 400px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.card::before {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px 20px 0 0;
+}
+  
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+  
+.testimonials .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 20%;
+    padding: 3px;
+    background: #7d2ae8;
+    margin-top: 30px;
+}
+  
+.testimonials .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 3px solid #fff;
+}
+  
+.card .media-icons {
+    position: absolute;
+    top: 12px;
+    right: 95px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.card .media-icons i {
+    color: #7d2ae8;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+}
+  
+.card .media-icons i:hover {
+    opacity: 1;
+}
+  
+.card .name-profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+} 
+  
+.name-profession .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+  
+.name-profession .profession {
+    font-size:15px;
+    font-weight: 500;
+}
+  
+.card .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+  
+.card .rating i {
+    font-size: 18px;
+    margin: 0 2px;
+    color: #7d2ae8;
+}
+  
+.card .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border: none;
+}
+  
+.card .button button {
+    background: #7d2ae8;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+  
+.button button:hover {
+    background: #6616d0;
+}
+  
+.swiper-pagination {
+    position: absolute;
+    top: 450px;
+    margin-bottom: 50px;
+}
+  
+.swiper-pagination-bullet {
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: white;
+}
+  
+.swiper-button-next, .swiper-button-prev {
+    opacity: 0.7;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    opacity: 1;
+    color: white;
+}
+
+
+/* CONTACT FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+}
+
+.contact-form h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.contact-form form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.contact-form .field {
+    margin: 20px 0;
+}
+
+.contact-form .label {
+    color: #fff;
+}
